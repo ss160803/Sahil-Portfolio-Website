@@ -1,0 +1,125 @@
+.container{
+  display: flex;
+}
+
+.sidebar {
+  width: 250px;
+  height: calc(110vh - 60px);
+  background-color: #333;
+  color: #fff;
+  padding: 20px;
+  box-sizing: border-box;
+  border-radius: 0px 7px 0px 0px;
+}
+
+.sidebar h2 {
+  margin: 0;
+  margin-bottom: 20px;
+  font-size: 24px;
+}
+
+.menu {
+  list-style: none;
+  padding: 0;
+}
+
+.menu-item {
+  padding: 10px 15px;
+  cursor: pointer;
+  background-color: #444;
+  border-radius: 5px;
+  transition: background-color 0.3s;
+  margin-bottom: 5px;
+}
+
+.menu-item:hover {
+  background-color: #555;
+}
+
+.submenu {
+  list-style: none;
+  padding: 0 0 0 20px;
+  margin: 10px 0 0 0;
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.5s, padding 0.5s;
+}
+
+.submenu li {
+  padding: 10px 0;
+  font-size: 14px;
+  color: #ddd;
+  cursor: pointer;
+}
+
+.submenu li:hover {
+  color: #fff;
+  background-color: rgb(31, 27, 27);
+  background-size: cover;
+}
+
+.submenu.active {
+  max-height: 200px;
+  /* Adjust as needed */
+  padding: 10px 0;
+}
+
+.content {
+  margin-left: 0vh;
+  padding: 20px;
+  width: calc(100% - 270px);
+  box-sizing: border-box;
+  margin-top: 0vh;
+}
+
+.grid {
+  display: none;
+  grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+  gap: 20vh;
+}
+
+.grid.active {
+  display: grid;
+}
+
+.card {
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  text-align: center;
+  width: 30vh;
+}
+
+.card #select{
+  background: rgb(69, 193, 255);
+  color: white;
+  border: none;
+  margin: 0px 0px 10px 0px;
+  font-size: 20px;
+  border-radius: 5px;
+  padding: 10px 40px 10px 40px;
+  font-family: Tahoma;
+  font-weight: bold;
+  cursor: pointer;
+}
+.card #select:hover{
+  background:rgb(51, 142, 195) ;
+}
+
+
+.card img {
+  width: 100%;
+  height: auto;
+}
+
+.card h3 {
+  margin: 10px 0;
+  font-size: 18px;
+}
+
+.card p {
+  padding: 0 10px 20px 10px;
+  font-size: 14px;
+  color: #333;
+}
