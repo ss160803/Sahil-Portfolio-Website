@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Home</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="Stylesheet 1.css">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap');
+    </style>
+
+</head>
+
+<body>
+    <header>
+        <nav>
+            <div class="left">Sahil's Portfolio</div>
+            <div class="right">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="#">Services</a></li>
+                    <li><a href="project.html">Projects</a></li>
+                    <li><a href="#">Contact Me</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section class="firstSection">
+            <div class="leftSection">
+                Hello Everyone, My Name is <span class="purple">Sahil Singh</span><br>
+                <span id="element"></span>
+                <div class="pink"><code>#One line of code at a time.</code></div>
+                <div class="buttons">
+                    <button class="btn">Download Resume</button>
+                    <button class="btn">Visit Github</button>
+                </div>
+
+            </div>
+
+            <div class="rightSection">
+                <img src="Images/Profile-Photo.jpg" alt="Dev Image">
+            </div>
+        </section>
+        <hr>
+        <section class="secondsection">
+            <span class="text-gray">What I have done so far</span>
+            <h1>Work Experience</h1>
+            <div class="box">
+                <div class="vertical">
+                    <img src="Images/html logo.png" alt="image-1" class="image-top">
+                    <div class="vertical-title">
+                        HTML Developer
+                    </div>
+                    <div class="vertical-desc">
+                        An HTML developer is a professional web designer who uses HTML to create website layouts based
+                        on templates and wireframes.
+                    </div>
+                </div>
+                <div class="vertical">
+                    <img src="Images/net-logo.png" alt="image-1" class="image-top" id="net"
+                        style="border-radius: 10px;">
+                    <div class="vertical-title">
+                        .NET Developer
+                    </div>
+                    <div class="vertical-desc">
+                        Net developer is a software professional or an Information Technology (IT) expert who designs
+                        user-friendly and highly scalable web applications.
+                    </div>
+                </div>
+                <div class="vertical">
+                    <img src="Images/java-logo.jpg" alt="image-1" class="image-top" style="border-radius: 10px;">
+                    <div class="vertical-title">
+                        Java Developer
+                    </div>
+
+                    <div class="vertical-desc">
+                        A Java Developer is a programmer who designs, develops, and manages Java-based applications and
+                        software.
+                    </div>
+                </div>
+                <div class="vertical">
+                    <img src="Images/php-logo.png" alt="image-1" class="image-top" style="width: 2.5rem; top: -35px;">
+                    <div class="vertical-title" style="top: 68px;">
+                        Php Developer
+                    </div>
+                    <div class="vertical-desc" style="top: 74px;">
+                        PHP developers develop programs, applications, and web sites using the dynamic scripting
+                        language PHP.
+                    </div>
+                </div>
+                <div class="vertical">
+                    <img src="Images/python-logo.jpg" alt="image-1" class="image-top" style="border-radius: 10px;">
+                    <div class="vertical-title" style="width: 150px;">
+                        Python Developer
+                    </div>
+                    <div class="vertical-desc">
+                        A Python Developer is a member of a software team who is proficient in creating, designing, and
+                        delivering computer applications and other programs in Python.
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <div class="footer">
+            <div class="footer-first">
+                <h3>Sahil's Portfolio</h3>
+            </div>
+            <div class="footer-second">
+                <ul>
+                    <label for="insta">
+                        <li><img src="Images/icons8-instagram-50.png" alt="Instagram icon by icon8"
+                                style="margin: 0px 5px -17px 5px;" id="insta">
+                            <a href="#" id="insta">Instagram</a>
+                        </li>
+                    </label>
+
+                    <label for="yt">
+                        <li><img src="Images/icons8-youtube-50.png" alt="Youtube icon by icon8"
+                                style="margin: 0px 5px -17px 5px">
+                            <a href="#">Youtube </a>
+                        </li>
+                    </label>
+
+                    <label for="git">
+                        <li><img src="Images/icons8-github-60.png" alt="Git-hub icon by icon8"
+                                style="margin:0px 5px -17px 0px">
+                            <a href="#">Git-hub </a>
+                        </li>
+                    </label>
+
+                    <label for="linkin">
+                        <li><img src="Images/icons8-linkedin-50.png" alt="LinkedIn icon by icon8"
+                                style="margin:0px 10px -17px 0px">
+                            <a href="#">LinkedIn </a>
+                        </li>
+                    </label>
+
+                    <label for="twitt">
+                        <li><img src="Images/icons8-twitter-50.png" alt="Twitter icon by icon8"
+                                style="margin:0px 15px -17px 4px">
+                            <a href="#">Twitter </a>
+                        </li>
+                    </label>
+                </ul>
+            </div>
+            <div class="footer-third">
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">Services</a></li>
+                    <li><a href="#">Projects</a></li>
+                    <li><a href="#">Contact Me</a></li>
+                </ul>
+            </div>
+            <div class="footer-fourth">
+                <ul>
+                    <label for="name">
+                        <li>Enter Your Name</li>
+                    </label>
+                    <input type="text" name="" id="name">
+
+                    <label for="eid">
+                        <li>Enter Your Email *</li>
+                    </label>
+                    <input type="email" name="" id="eid">
+
+                    <label for="subject">
+                        <li>Enter Your Subject</li>
+                    </label>
+                    <input type="text" name="" id="subject">
+
+                    <label for="msg">
+                        <li>Message</li>
+                    </label>
+                    <textarea name="" id="msg"></textarea>
+
+                    <input type="submit" value="Submit" name="" id="sub">
+                </ul>
+            </div>
+        </div>
+        <div class="footer-contact">
+
+            <code>Contact-No:8154914470 &nbsp; &nbsp; Email-Id:singhsahil160803@gmail.com</code>
+
+        </div>
+        <div class="footer-rights">
+            <code>Copyrights: &copy2024 Sahil Singh. All rights are reserved</code>
+        </div>
+    </footer>
+
+    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+    <!-- Setup and start animation! -->
+    <script>
+        var typed = new Typed('#element', {
+            strings: ['A Web-Developer', 'A Web-Designer', 'A Quick Learner'],
+            typeSpeed: 60,
+        });
+    </script>
+</body>
+
+</html>
