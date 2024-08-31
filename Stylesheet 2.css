@@ -1,4 +1,62 @@
-.container{
+* {
+  padding: 0;
+  margin: 0;
+}
+
+:root {
+  --body-color: rgb(1 87 97);
+  --heading-color: rgb(247, 220, 79);
+  --vibrance-color: rgb(10, 213, 236);
+}
+
+/*================== Body Structure =======================*/
+body {
+  background-color: var(--body-color);
+  color: White;
+  font-family: "Poppins", sans-serif;
+  font-weight: 510;
+}
+
+/*=========================================================*/
+
+/*================== Navigation Bar =======================*/
+nav {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  height: 60px;
+}
+
+nav ul {
+  display: flex;
+  justify-content: center;
+}
+
+nav ul li {
+  list-style: none;
+  margin: 0 20px;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: white;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: bold;
+}
+
+nav ul li a:hover {
+  color: rgb(153, 153, 153);
+  font-size: 1.05rem;
+}
+
+.left {
+  margin: 100px 0;
+  font-size: 1.5rem;
+  color: var(--heading-color);
+}
+
+/*=========================================================*/
+.container {
   display: flex;
 }
 
@@ -60,7 +118,6 @@
 
 .submenu.active {
   max-height: 200px;
-  /* Adjust as needed */
   padding: 10px 0;
 }
 
@@ -69,7 +126,6 @@
   padding: 20px;
   width: calc(100% - 270px);
   box-sizing: border-box;
-  margin-top: 0vh;
 }
 
 .grid {
@@ -88,29 +144,13 @@
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   overflow: hidden;
   text-align: center;
-  width: 30vh;
+  width: 100%;
 }
-
-.card #select{
-  background: rgb(69, 193, 255);
-  color: white;
-  border: none;
-  margin: 0px 0px 10px 0px;
-  font-size: 20px;
-  border-radius: 5px;
-  padding: 10px 40px 10px 40px;
-  font-family: Tahoma;
-  font-weight: bold;
-  cursor: pointer;
-}
-.card #select:hover{
-  background:rgb(51, 142, 195) ;
-}
-
 
 .card img {
   width: 100%;
   height: auto;
+  border-bottom: 2px solid #ddd; /* Optional: Adds a border between the image and content */
 }
 
 .card h3 {
@@ -123,156 +163,143 @@
   font-size: 14px;
   color: #333;
 }
+
+.project-button {
+  display: inline-block;
+  background-color: rgb(69, 193, 255);
+  color: white;
+  text-decoration: none;
+  font-size: 16px;
+  padding: 10px 20px;
+  border-radius: 5px;
+  margin: 10px;
+  font-family: Tahoma;
+  font-weight: bold;
+  transition: background-color 0.3s ease;
+}
+
+.project-button:hover {
+  background-color: rgb(51, 142, 195);
+}
+
 /* Media Queries for Responsiveness */
 @media (max-width: 768px) {
   .container {
-      flex-direction: column;
+    flex-direction: column;
   }
 
   .sidebar {
-      width: 100%;
-      height: auto;
-      margin-bottom: 20px;
+    width: 100%;
+    height: auto;
+    margin-bottom: 20px;
   }
 
   .content {
-      width: 100%;
-      margin-left: 0;
+    width: 100%;
+    margin-left: 0;
   }
 
   .grid {
-      grid-template-columns: repeat(auto-fill, minmax(100px, 1fr));
-      gap: 10px;
+    grid-template-columns: repeat(auto-fill, minmax(100px, 1fr));
+    gap: 10px;
   }
 
   .card {
-      width: 100%;
+    width: 100%;
   }
 }
 
-.container{
-  display: flex;
-}
-
-.sidebar {
-  width: 250px;
-  height: calc(110vh - 60px);
+/* Footer Styling */
+footer {
   background-color: #333;
   color: #fff;
-  padding: 20px;
-  box-sizing: border-box;
-  border-radius: 0px 7px 0px 0px;
+  padding: 40px 20px;
+  font-family: Arial, sans-serif;
 }
 
-.sidebar h2 {
-  margin: 0;
+.footer {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.footer-first {
+  flex: 1 1 100%;
+  text-align: center;
   margin-bottom: 20px;
-  font-size: 24px;
 }
 
-.menu {
+.footer-second, .footer-third, .footer-fourth {
+  flex: 1 1 30%;
+  margin-bottom: 20px;
+}
+
+.footer-second ul, .footer-third ul {
   list-style: none;
   padding: 0;
 }
 
-.menu-item {
-  padding: 10px 15px;
-  cursor: pointer;
-  background-color: #444;
-  border-radius: 5px;
-  transition: background-color 0.3s;
-  margin-bottom: 5px;
+.footer-second li, .footer-third li {
+  margin-bottom: 10px;
 }
 
-.menu-item:hover {
-  background-color: #555;
-}
-
-.submenu {
-  list-style: none;
-  padding: 0 0 0 20px;
-  margin: 10px 0 0 0;
-  max-height: 0;
-  overflow: hidden;
-  transition: max-height 0.5s, padding 0.5s;
-}
-
-.submenu li {
-  padding: 10px 0;
-  font-size: 14px;
-  color: #ddd;
-  cursor: pointer;
-}
-
-.submenu li:hover {
+.footer-second a, .footer-third a {
   color: #fff;
-  background-color: rgb(31, 27, 27);
-  background-size: cover;
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  transition: color 0.3s ease;
 }
 
-.submenu.active {
-  max-height: 200px;
-  /* Adjust as needed */
-  padding: 10px 0;
+.footer-second a img, .footer-third a img {
+  margin-right: 10px;
+  width: 24px;
 }
 
-.content {
-  margin-left: 0vh;
-  padding: 20px;
-  width: calc(100% - 270px);
-  box-sizing: border-box;
-  margin-top: 0vh;
+.footer-second a:hover, .footer-third a:hover {
+  color: #f39c12;
 }
 
-.grid {
-  display: none;
-  grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
-  gap: 20vh;
+.footer-fourth form {
+  display: flex;
+  flex-direction: column;
 }
 
-.grid.active {
-  display: grid;
-}
-
-.card {
-  background-color: #fff;
-  border-radius: 10px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-  overflow: hidden;
-  text-align: center;
-  width: 30vh;
-}
-
-.card #select{
-  background: rgb(69, 193, 255);
-  color: white;
-  border: none;
-  margin: 0px 0px 10px 0px;
-  font-size: 20px;
-  border-radius: 5px;
-  padding: 10px 40px 10px 40px;
-  font-family: Tahoma;
-  font-weight: bold;
-  cursor: pointer;
-}
-.card #select:hover{
-  background:rgb(51, 142, 195) ;
-}
-
-
-.card img {
-  width: 100%;
-  height: auto;
-}
-
-.card h3 {
-  margin: 10px 0;
-  font-size: 18px;
-}
-
-.card p {
-  padding: 0 10px 20px 10px;
+.footer-fourth label {
+  margin-bottom: 5px;
   font-size: 14px;
-  color: #333;
+  color: #f39c12;
 }
 
+.footer-fourth input, .footer-fourth textarea {
+  margin-bottom: 15px;
+  padding: 10px;
+  border: none;
+  border-radius: 4px;
+  background-color: #444;
+  color: #fff;
+}
+
+.footer-fourth textarea {
+  resize: none;
+}
+
+.footer-fourth input[type="submit"] {
+  background-color: #f39c12;
+  color: #333;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.footer-fourth input[type="submit"]:hover {
+  background-color: #e67e22;
+}
+
+.footer-contact, .footer-rights {
+  text-align: center;
+  margin-top: 20px;
+  font-size: 12px;
+  color: #aaa;
+}
