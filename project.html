@@ -1,5 +1,7 @@
+
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -9,6 +11,7 @@
         @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap');
     </style>
 </head>
+
 <body>
     <header>
         <nav>
@@ -46,49 +49,46 @@
         </div>
 
         <main class="content">
-            <div id="web-project-grid" class="grid">
-                <div class="card">
-                    <img src="./Images/Home page ss1.jpg" alt="Project 1">
-                    <h3>Web Project 1</h3>
-                    <p>Description of Web Project 1.</p>
-                    <a href="http://example.com/project1" class="project-button" target="_blank">View Project</a>
-                </div>
-                <div class="card">
-                    <img src="project2.jpg" alt="Project 2">
-                    <h3>Web Project 2</h3>
-                    <p>Description of Web Project 2.</p>
-                    <a href="http://example.com/project2" class="project-button" target="_blank">View Project</a>
-                </div>
+            <div id="web-project-1" class="project-window">
+                <img src="./Images/Home page ss1.jpg" alt="Web Project 1">
+                <h3>Web Project 1</h3>
+                <p>Description of Web Project 1.</p>
+                <a href="https://yourwebsite.com" target="_blank"><button>View Project</button></a>
             </div>
 
-            <div id="app-development-grid" class="grid">
-                <div class="card">
-                    <img src="app1.jpg" alt="App Project 1">
-                    <h3>App Project 1</h3>
-                    <p>Description of App Project 1.</p>
-                    <a href="http://example.com/app1" class="project-button" target="_blank">View Project</a>
-                </div>
-                <div class="card">
-                    <img src="app2.jpg" alt="App Project 2">
-                    <h3>App Project 2</h3>
-                    <p>Description of App Project 2.</p>
-                    <a href="http://example.com/app2" class="project-button" target="_blank">View Project</a>
-                </div>
+            <div id="web-project-2" class="project-window">
+                <img src="project2.jpg" alt="Web Project 2">
+                <h3>Web Project 2</h3>
+                <p>Description of Web Project 2.</p>
+                <a href="https://yourwebsite.com" target="_blank"><button>View Project</button></a>
             </div>
 
-            <div id="software-development-grid" class="grid">
-                <div class="card">
-                    <img src="software1.jpg" alt="Software Project 1">
-                    <h3>Software Project 1</h3>
-                    <p>Description of Software Project 1.</p>
-                    <a href="http://example.com/software1" class="project-button" target="_blank">View Project</a>
-                </div>
-                <div class="card">
-                    <img src="software2.jpg" alt="Software Project 2">
-                    <h3>Software Project 2</h3>
-                    <p>Description of Software Project 2.</p>
-                    <a href="http://example.com/software2" class="project-button" target="_blank">View Project</a>
-                </div>
+            <div id="app-project-1" class="project-window">
+                <img src="app1.jpg" alt="App Project 1">
+                <h3>App Project 1</h3>
+                <p>Description of App Project 1.</p>
+                <a href="https://yourwebsite.com" target="_blank"><button>View Project</button></a>
+            </div>
+
+            <div id="app-project-2" class="project-window">
+                <img src="app2.jpg" alt="App Project 2">
+                <h3>App Project 2</h3>
+                <p>Description of App Project 2.</p>
+                <a href="https://yourwebsite.com" target="_blank"><button>View Project</button></a>
+            </div>
+
+            <div id="software-project-1" class="project-window">
+                <img src="software1.jpg" alt="Software Project 1">
+                <h3>Software Project 1</h3>
+                <p>Description of Software Project 1.</p>
+                <a href="https://yourwebsite.com" target="_blank"><button>View Project</button></a>
+            </div>
+
+            <div id="software-project-2" class="project-window">
+                <img src="software2.jpg" alt="Software Project 2">
+                <h3>Software Project 2</h3>
+                <p>Description of Software Project 2.</p>
+                <a href="https://yourwebsite.com" target="_blank"><button>View Project</button></a>
             </div>
         </main>
     </div>
@@ -135,7 +135,7 @@
                 <ul>
                     <li><a href="#"><img src="./Images/icons8-home-24.png" alt="">Home</a></li>
                     <li><a href="#"><img src="./Images/icons8-service-24.png" alt="">Services</a></li>
-                    <li><a href="#"><img src="./Images/icons8-project-24.png" alt="">Projects</a></li>
+                    <li><a href="./project.html"><img src="./Images/icons8-project-24.png" alt="">Projects</a></li>
                     <li><a href="#"><img src="./Images/icons8-add-male-user-group-24.png" alt="">Contact Me</a></li>
                 </ul>
             </div>
@@ -158,25 +158,32 @@
             </div>
         </div>
         <div class="footer-contact">
-            <code>Contact-No: 8154914470 &nbsp; &nbsp; Email-Id: singhsahil160803@gmail.com</code>
+            <code>Email-Id: singhsahil00160803@gmail.com</code>
         </div>
         <div class="footer-rights">
-            <code>Copyright: &copy; 2024 Sahil Singh. All rights reserved</code>
+            <code>Copyright: &copy; 2024 SahilSingh. All rights reserved</code>
         </div>
     </footer>
     <script>
-        function toggleSubmenu(id) {
-            const submenu = document.getElementById(id);
-            submenu.classList.toggle('active');
-        }
+    function toggleSubmenu(id) {
+        const submenu = document.getElementById(id);
+        submenu.classList.toggle('active');
+    }
 
-        function showProjects(gridId) {
-            const grids = document.querySelectorAll('.grid');
-            grids.forEach(grid => {
-                grid.classList.remove('active');
-            });
-            document.getElementById(gridId).classList.add('active');
+    function showProject(projectId) {
+        // Hide all project windows
+        const projects = document.querySelectorAll('.project-window');
+        projects.forEach(project => {
+            project.classList.remove('active');
+        });
+
+        // Show the selected project window
+        const selectedProject = document.getElementById(projectId);
+        if (selectedProject) {
+            selectedProject.classList.add('active');
         }
+    }
     </script>
 </body>
+
 </html>
