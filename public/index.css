@@ -64,7 +64,7 @@ nav ul li a.active {
 }
 
 .intro {
-  background: url(/public/Images/Intro-bg.jpg);
+  background: url(Images/Intro-bg.jpg);
   background-size: 100% 90vh;
   background-repeat: no-repeat;
   display: flex;
@@ -484,7 +484,7 @@ nav ul li a.active {
   height: 85vh;
   width: 100%;
   overflow: hidden;
-  background: url(../Images/service-bg.jpg);
+  background: url(Images/service-bg.jpg);
   background-size: 100% 85vh;
   background-repeat: no-repeat;
   border-radius: 1em;
