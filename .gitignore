@@ -1,4 +1,4 @@
 # Ignore the Images folders in the parent directory
-../Images/
-../Projects-Img/ 
-../svg/
+Images/
+Projects-Img/ 
+svg/
