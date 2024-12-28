@@ -1,2 +1,3 @@
 # Sahil-Portfolio-Website
-This is my personal portfolio website, which I made with Html, Css and Javascript
+This is my portfolio website, which I made with HTML, CSS, and Javascript.
+
